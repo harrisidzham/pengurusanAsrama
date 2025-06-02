@@ -176,7 +176,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
      
         <div class="login-form-container">
             
-            <h1 class="welcome-heading">Selamat Datang ke Pendaftaran Asrama</h1>
+            <h1 class="welcome-heading">Selamat Datang ke Pengurusan Asrama</h1>
 
             <h2>Log Masuk</h2>
 
