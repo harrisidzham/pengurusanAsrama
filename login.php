@@ -194,7 +194,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </form>
 
             <div class="signup-link">
-                <p>Belum ada akaun? <a href="signup.php">Daftar Sekarang</a></p>
+                <p>Akuan Baharu <a href="signup.php">Daftar Sekarang</a></p>
             </div>
         </div>
     </div>
