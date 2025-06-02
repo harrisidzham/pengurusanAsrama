@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             align-items: center;
             background-color: #000; /* Set background to black */
             font-family: 'Nunito', sans-serif;
-            background: radial-gradient(circle at top left, #2b2b2b, #000); /* Subtle gradient for more depth */
+            background: radial-gradient(circle at top left,rgb(255, 255, 255), #000); /* Subtle gradient for more depth */
             overflow: hidden;
         }
 
