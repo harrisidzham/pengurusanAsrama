@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ms">
 
 <head>
     <meta charset="UTF-8">
@@ -59,25 +59,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #000; /* Pure black background */
+            background: #f8f9fa; /* Cerah: hampir putih */
             font-family: 'Nunito', sans-serif;
         }
 
         .form-container {
-            background: rgba(255, 255, 255, 0.08); /* Semi-transparent white */
+            background: #ffffff; /* Putih penuh */
             border-radius: 20px;
             padding: 40px;
             width: 100%;
             max-width: 450px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(10px); /* Adds depth */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
 
         .form-title {
             text-align: center;
             font-size: 30px;
             font-weight: bold;
-            color: #fff;
+            color: #333;
             margin-bottom: 30px;
         }
 
@@ -85,39 +84,38 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             padding: 15px;
             margin-bottom: 20px;
             border-radius: 10px;
-            border: none;
-            background-color: rgba(255, 255, 255, 0.15);
-            color: #fff;
+            border: 1px solid #ced4da;
+            background-color: #f9f9f9;
+            color: #333;
             transition: all 0.3s ease;
         }
 
         .form-control::placeholder {
-            color: rgba(255, 255, 255, 0.7);
+            color: #999;
         }
 
         .form-control:focus {
-            border-color: #ff4081; /* Pink accent */
-            box-shadow: 0 0 10px rgba(255, 64, 129, 0.5);
-            background-color: rgba(255, 255, 255, 0.1);
+            border-color: #0d6efd;
+            box-shadow: 0 0 8px rgba(13, 110, 253, 0.25);
+            background-color: #fff;
         }
 
         .btn-primary {
             width: 100%;
             padding: 15px;
             font-size: 18px;
-            background: linear-gradient(45deg, #ff4081, #f50057); /* Pink gradient */
+            background-color: #0d6efd;
             border: none;
             border-radius: 50px;
             color: #fff;
             font-weight: bold;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
             transition: all 0.3s ease;
         }
 
         .btn-primary:hover {
-            background: linear-gradient(45deg, #f50057, #ff4081);
-            transform: translateY(-3px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+            background-color: #0b5ed7;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
         }
 
         .alert {
@@ -129,7 +127,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         .success {
             font-size: 14px;
-            color: #28a745;
+            color: green;
             text-align: center;
             margin-bottom: 10px;
         }
@@ -140,13 +138,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         .login-link a {
-            color: #ff4081;
+            color: #0d6efd;
             text-decoration: none;
             font-weight: bold;
         }
 
         .login-link a:hover {
-            color: #fff;
+            color: #0a58ca;
         }
 
         @media (max-width: 768px) {
@@ -166,8 +164,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 font-size: 16px;
             }
         }
+
         p {
-            color: white;
+            color: #333;
         }
     </style>
 </head>
@@ -176,14 +175,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="form-container">
         <h2 class="form-title">Daftar Akaun</h2>
 
-        <!-- Show error message if registration fails -->
+        <!-- Papar mesej ralat atau kejayaan -->
         <?php if (!empty($error)): ?>
             <div class="alert">
                 <?php echo $error; ?>
             </div>
         <?php endif; ?>
 
-        
         <?php if (!empty($success)): ?>
             <div class="success">
                 <?php echo $success; ?>
