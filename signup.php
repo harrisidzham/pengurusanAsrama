@@ -64,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         .form-container {
-            background: rgba(255, 255, 255, 0.08); /* Semi-transparent white */
+            background: rgba(212, 206, 206, 0.08); /* Semi-transparent white */
             border-radius: 20px;
             padding: 40px;
             width: 100%;
@@ -96,10 +96,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         .form-control:focus {
-            border-color: #ff4081; /* Pink accent */
-            box-shadow: 0 0 10px rgba(255, 64, 129, 0.5);
-            background-color: rgba(255, 255, 255, 0.1);
-        }
+    border-color: #ff80ab; /* Lebih cerah dari #ff4081 */
+    box-shadow: 0 0 15px rgba(255, 128, 171, 0.8); /* Lebih terang */
+    background-color: rgba(255, 255, 255, 0.2); /* Lebih terang */
+    color: #fff; /* Pastikan teks kekal putih */
+}
 
         .btn-primary {
             width: 100%;
